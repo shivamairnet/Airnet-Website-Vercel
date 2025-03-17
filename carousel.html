@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carousel Section</title>
+  </head>
+  <body>
+    <div style="width: 80%; margin: auto; overflow: hidden; position: relative">
+      <button
+        style="
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          left: 10px;
+        "
+        onclick="moveSlide(-1)"
+      >
+        &lt;
+      </button>
+      <div
+        id="carousel"
+        style="display: flex; transition: transform 0.5s ease-in-out"
+      >
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 1"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 1</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 2"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 2</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 3"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 3</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 4"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 4</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 5"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 5</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 6"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 6</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 7"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 7</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+        <div
+          style="
+            flex: 0 0 25%;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 5px;
+          "
+        >
+          <img
+            src="https://via.placeholder.com/150"
+            alt="Image 8"
+            style="width: 100%; height: auto; border-radius: 5px"
+          />
+          <h3>Card 8</h3>
+          <button
+            style="
+              display: inline-block;
+              margin-top: 10px;
+              padding: 10px 15px;
+              background-color: blue;
+              color: white;
+              border: none;
+              border-radius: 5px;
+              cursor: pointer;
+            "
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+      <button
+        style="
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          background: rgba(0, 0, 0, 0.5);
+          color: white;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          right: 10px;
+        "
+        onclick="moveSlide(1)"
+      >
+        &gt;
+      </button>
+    </div>
+    <script>
+      let index = 0;
+      function moveSlide(direction) {
+        const carousel = document.getElementById("carousel");
+        const totalSlides = 8;
+        const visibleSlides = 4;
+        const maxIndex = totalSlides - visibleSlides;
+
+        index += direction;
+
+        // Ensure index does not go out of bounds
+        if (index < 0) {
+          index = maxIndex; // Loop back to the end
+        }
+        if (index > maxIndex) {
+          index = 0; // Loop back to the beginning
+        }
+
+        carousel.style.transform = `translateX(-${index * 25}%)`;
+      }
+    </script>
+  </body>
+</html>
