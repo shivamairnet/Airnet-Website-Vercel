@@ -1,0 +1,16 @@
+{
+    "rewrites": [
+        { "source": "/home", "destination": "/index.html" },
+        { "source": "/about-us", "destination": "/about-us.html" },
+        { "source": "/contact-us", "destination": "/contact-us.html" },
+        { "source": "/services", "destination": "/services.html" },
+        { "source": "/services/business-travel", "destination": "/services/business-travel.html" },
+        { "source": "/services/events", "destination": "/services/events.html" },
+        { "source": "/services/leisure-travel", "destination": "/services/leisure-travel.html" },
+        { "source": "/services/rare-finds", "destination": "/services/rare-finds.html" },
+        { "source": "/services/travel-insurance", "destination": "/services/travel-insurance.html" },
+        { "source": "/services/visa", "destination": "/services/visa.html" },
+        { "source": "/quality-policy", "destination": "/quality-policy.html" },
+        { "source": "/sitemap", "destination": "/sitemap.xml" }
+      ]
+}
