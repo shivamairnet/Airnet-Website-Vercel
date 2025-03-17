@@ -1,0 +1,10 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /api/
+Disallow: /login/
+Disallow: /register/
+Disallow: /private/
+Disallow: /*.html$
+Allow: /
+
+Sitemap: https://www.airnet-travels.com/sitemap.xml

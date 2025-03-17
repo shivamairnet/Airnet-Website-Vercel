@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zig-Zag Layout</title>
+  <style>
+    /* For mobile devices */
+    @media (max-width: 767px) {
+      .custom-section {
+        padding: 2rem;
+      }
+      
+      .custom-section div {
+        flex-direction: column !important;
+        gap: 2rem !important;
+      }
+      
+      .custom-section .col-lg-6 {
+        flex-basis: 100%;
+        padding: 0;
+      }
+      
+      .custom-section img {
+        max-width: 100%;
+      }
+    }
+  
+    /* For tablets (medium screens) */
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .custom-section {
+        padding: 3rem;
+      }
+      
+      .custom-section div {
+        flex-direction: row;
+        gap: 3rem;
+      }
+      
+      .custom-section .col-lg-6 {
+        flex-basis: 48%;
+      }
+      
+      .custom-section img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="custom-section" style="display: flex; flex-direction: column; gap: 5rem; padding: 5rem; align-items: center;">
+    <div style="display: flex; flex-direction: row;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Tourist Visa</h2>
+        <p>Planning a vacation abroad? Our team helps with tourist visa applications for destinations like the US, UK, Canada, and France. We guide you through the process, from requirements to securing appointments, making your dream vacation a reality.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 1" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row-reverse;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2> Business Visa</h2>
+        <p>Need to travel for business? Our experts assist with business visa applications for meetings, conferences, and opportunities abroad, ensuring all documents are in order and processed on time.
+        </p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 2" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Student Visa</h2>
+        <p>Embarking on education abroad? We help with student visa applications, from document preparation to interview guidance, ensuring you’re ready for your academic journey.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 3" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row-reverse;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Work Visa</h2>
+        <p>Looking to work abroad? Our comprehensive services help you navigate work visa applications, making your transition to a new job overseas smooth and easy.
+        </p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 4" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Dependent Visa</h2>
+        <p>Reuniting with family abroad? We assist in obtaining dependent visas, guiding you through the application process and ensuring all documents are properly submitted.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 5" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row-reverse;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Medical Visa</h2>
+        <p>Seeking medical treatment overseas? We assist with medical visa applications, ensuring a smooth process while you focus on your health and well-being.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 6" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Transit Visa</h2>
+        <p>Traveling through a foreign country? We help with transit visa applications to ensure a convenient and smooth journey during layovers.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 7" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row-reverse;">
+      <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+        <h2>Schengen Visa</h2>
+        <p> Planning to explore Europe? We assist with Schengen visa applications, helping you travel freely within the Schengen Area with the required documentation.</p>
+      </div>
+      <div class="col-lg-6" style="flex-basis: 50%;">
+        <img src="" alt="Placeholder Image 8" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+      </div>
+    </div>
+    <div style="display: flex; flex-direction: row;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Work Holiday Visa</h2>
+          <p>Want to work and travel abroad? Our services help you navigate work holiday visa applications, ensuring eligibility and a fulfilling cultural experience.</p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 7" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row-reverse;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Family Reunion Visa </h2>
+          <p> Reuniting with family abroad? We assist with family reunion visa applications, guiding you through the process to ensure a successful reunion.</p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 8" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Spouse Visa</h2>
+          <p>Looking to join your spouse abroad? Our team provides guidance for spouse visa applications, helping you prepare documents and interviews for a smooth transition.
+        </p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 7" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row-reverse;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Investor Visa</h2>
+          <p> Seeking investment opportunities abroad? We assist with investor visa applications, helping you navigate the process and explore international investment options.
+        </p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 8" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Research Visa</h2>
+          <p>Engaging in research abroad? We guide you through the research visa process, ensuring you meet all necessary requirements for your academic or scientific pursuits.
+        </p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 7" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: row-reverse;">
+        <div class="col-lg-6" style="padding: 1rem; flex-basis: 50%;">
+          <h2>Cultural Exchange Visa</h2>
+          <p>Participating in a cultural exchange program? We help with cultural exchange visa applications, ensuring all documents are gathered and criteria met for your experience abroad.</p>
+        </div>
+        <div class="col-lg-6" style="flex-basis: 50%;">
+          <img src="" alt="Placeholder Image 8" style="width: 100%; height: auto; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        </div>
+      </div>
+
+  </section>
+</body>
+</html>
+

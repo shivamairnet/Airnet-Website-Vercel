@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airnet Header</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #1a1a1a;
+      padding: 10px 20px;
+      color: #fff;
+    }
+
+    .logo img {
+      height: 40px;
+    }
+
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .callback-btn {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .callback-btn:hover {
+      background-color: #0056b3;
+    }
+
+    .navbar-toggle {
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    #slider {
+      position: fixed;
+      top: 0;
+      right: -250px;
+      width: 250px;
+      height: 100%;
+      background-color: #333;
+      color: #fff;
+      overflow-y: auto;
+      transition: right 0.3s ease;
+      box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    }
+
+    #slider ul {
+      list-style: none;
+      padding: 20px;
+      margin: 0;
+    }
+
+    #slider ul li {
+      margin: 15px 0;
+    }
+
+    #slider ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    #slider ul li a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="airnet-logo.png" alt="Airnet Logo">
+    </div>
+    <div class="nav-right">
+      <button class="callback-btn">Request a Callback</button>
+      <button class="navbar-toggle" id="navbar-toggle">☰</button>
+    </div>
+  </header>
+
+  <div id="slider">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+
+  <script>
+    // Check if the button is properly being clicked
+    document.getElementById('navbar-toggle').addEventListener('click', function() {
+      console.log('Button clicked!');  // Debugging log to check if click is being detected.
+      
+      const slider = document.getElementById('slider');
+      const currentRight = window.getComputedStyle(slider).right;
+
+      if (currentRight === '0px') {
+        slider.style.right = '-250px'; // Hide the slider
+      } else {
+        slider.style.right = '0px'; // Show the slider
+      }
+    });
+  </script>
+
+</body>
+</html>
