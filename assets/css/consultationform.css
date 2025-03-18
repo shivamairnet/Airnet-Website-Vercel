@@ -75,11 +75,11 @@
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 80px;
   color: white;
   font-size: 20px;
   font-weight: bold;
-  background: none;
+  background: red;
   border: none;
   cursor: pointer;
   z-index: 1000; 
@@ -109,7 +109,7 @@ input, button {
 }
 
 .image-container img{
-  width: 100%;
+  width: 101%;
   height: auto;
   display: block;
 }

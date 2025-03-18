@@ -1,51 +1,100 @@
 <!-- form.html -->
 <div class="popup-overlay" id="popup">
-    <div class="popup">
-        <div class="popup-content">
-            <div class="left-column">
-                <h2 class="text-color-dark text-center fs-4 fw-bold mb-2">Get In Touch</h2>
-                <form id="contactForm" class="contactForm">
-                    <div class="form-group">
-                      <input type="text" id="fullName" placeholder="Full Name*" name="Full_Name" required />
-                      <small class="error" id="nameError"></small>
-                    </div>
-                    <div class="form-group">
-                      <input type="email" id="email" placeholder="Email Id*" name="Email_Address" required />
-                      <small class="error" id="emailError"></small>
-                    </div>
-                    <div class="form-group">
-                      <input type="tel" id="phone" placeholder="Phone Number*" name="phone_no" required />
-                      <small class="error" id="phoneError"></small>
-                    </div>
-                    <div class="form-group">
-                      <textarea id="message" name="message" placeholder="Describe Your Travel Query"></textarea>
-                      <small class="error" id="messageError"></small>
-                    </div>
-                    <div class="submit-btn-div">
-                    <button type="submit" class="submit-btn">Submit</button>
-                    <div id="formMessage" class="form-message"></div>
-                    </div>
-                  </form>
-            </div>
-            <div class="right-column">
-                <div class="image-text">
-                    <h3 class="mT-3" style="font-size: 20px;font-weight: 600;">Plan &#8594; Book &#8594; Travel</h3>
-                    <p style="font-size: 14px;">Let's Make Your Every Travel Journey Effortless. <br>Connect With Us Today! </p>
-                </div>
-            <div class="image-container">
-                <img src="/assets/img/Form Image.jpg" alt="Form Image">   
-            </div>
-            <div class="social-media-icons" style="display: flex;justify-items: left;">
-                <a href="https://www.facebook.com/BoardTheTrip/" class="facebook"><i class="bi bi-facebook" style="color: white;"></i></a>
-                <a href="https://www.instagram.com/airnettravels/" class="instagram"><i class="bi bi-instagram" style="color: white;"></i></a>
-                <a href="https://in.linkedin.com/company/airnet-travels-and-cargo" class="linkedin"><i class="bi bi-linkedin" style="color: white;"></i></a>
-             
-         </div>
+  <div class="popup">
+    <div class="popup-content">
+      <div class="left-column">
+        <h2 class="text-color-dark text-center fs-4 fw-bold mb-2">
+          Get In Touch
+        </h2>
+        <form id="contactForm" class="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="fullName"
+              placeholder="Full Name*"
+              name="Full_Name"
+              required
+            />
+            <small class="error" id="nameError"></small>
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email Id*"
+              name="Email_Address"
+              required
+            />
+            <small class="error" id="emailError"></small>
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              id="phone"
+              placeholder="Phone Number*"
+              name="phone_no"
+              required
+            />
+            <small class="error" id="phoneError"></small>
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Describe Your Travel Query"
+            ></textarea>
+            <small class="error" id="messageError"></small>
+          </div>
+          <div class="submit-btn-div">
+            <button type="submit" class="submit-btn">Submit</button>
+            <div id="formMessage" class="form-message"></div>
+          </div>
+        </form>
+      </div>
+      <div class="right-column">
+        <div class="image-text">
+          <h3 class="mT-3" style="font-size: 20px; font-weight: 600">
+            Plan &#8594; Book &#8594; Travel
+          </h3>
+          <p style="font-size: 14px">
+            Let's Make Your Every Travel Journey Effortless. <br />Connect With
+            Us Today!
+          </p>
         </div>
+        <div class="image-container">
+          <img src="/assets/img/Form Image.jpg" alt="Form Image" />
         </div>
-        <button style="background-color: transparent;" class="close-btn" onclick="closePopup()">X</button>
+        <div
+          class="social-media-icons"
+          style="display: flex; justify-items: left"
+        >
+          <a href="https://www.facebook.com/BoardTheTrip/" class="facebook"
+            ><i class="bi bi-facebook" style="color: white"></i
+          ></a>
+          <a href="https://www.instagram.com/airnettravels/" class="instagram"
+            ><i class="bi bi-instagram" style="color: white"></i
+          ></a>
+          <a
+            href="https://in.linkedin.com/company/airnet-travels-and-cargo"
+            class="linkedin"
+            ><i class="bi bi-linkedin" style="color: white"></i
+          ></a>
+        </div>
+      </div>
     </div>
+    <button
+      style="
+        background-color: transparent;
+        color: white;
+        top: 10px;
+        right: 10px;
+        width: 30px;
+        height: 30px;
+      "
+      class="close-btn"
+      onclick="closePopup()"
+    >
+      X
+    </button>
+  </div>
 </div>
-
-
-  
