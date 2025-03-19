@@ -1240,7 +1240,7 @@ section {
 # Testimonials Section
 --------------------------------------------------------------*/
 .testimonials .testimonial-wrap {
-  padding-left: 10px;
+  padding-left: 30px;
 }
 
 .testimonials .testimonial-item {
@@ -2166,7 +2166,7 @@ section {
 .hero h1{
   font-size: 48px;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   color: var(--color-primary);
   /* color: #fff; */
 }
@@ -2188,13 +2188,8 @@ section {
   border-radius: 50px;
   transition: 0.3s;
   color: #fff;
-  /* color: var(--color-primary); */
-  /* background-color:  var(--color-primary-background);; */
-  /* background: rgba(255, 255, 255, 0.1); */
   background: var(--color-primary);
-  /* opacity: 0.1; */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
-  /* border: 2px solid rgba(255, 255, 255, 0.1); */
   border: 0.2rem solid var(--color-primary);
 }
 .hero .btn-get-started-2 {
@@ -2287,12 +2282,14 @@ section {
   }
 }
 
-/* .hero .icon-boxes {
-  padding-bottom: 60px;
-} */
-
  /* For mobile devices */
  @media (max-width: 767px) {
+
+  .carouse-text
+  {
+     margin-top: -40px;
+  }
+
   .custom-section {
     padding: 0 !important;
     margin-top: 35px;
